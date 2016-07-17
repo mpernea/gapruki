@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>GAPR-UKI</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+
+        #topbox {
+            background-color: #FFE9A6;
+            margin: 0 auto;
+            width: 75%;
+            height: 90px;
+            border-radius: 15px;
+
+        }
+
+        #menu {
+            background-color: #FFC928;
+            width: 75%;
+            height: 60px;
+            margin: 0 auto;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        #textbox {
+            background-color: #FFE9A6;
+            margin: 0 auto;
+            width: 75%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+
+        }
+
+        #text {
+            text-align: justify;
+            font-family: Georgia;
+            padding: 15px;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        #logo {
+            margin-left: 8px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            border-radius: 5px;
+            max-height: 85%;
+            vertical-align: middle;
+            float: left;
+        }
+
+        #logomenu {
+            margin-left: 8px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            border-radius: 5px;
+            float: left;
+        }
+
+        #teampic {
+            max-width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 6px;
+        }
+
+        #textlogo {
+            float: left;
+            margin-left: 10px;
+            margin-top: 8px;
+            word-wrap: normal;
+            font-family: 'Secular One', sans-serif;
+            font-weight: bold;
+            color: #074888;
+        }
+
+        #signupbutton {
+            background-color: #EC407A;
+            border-color: #EC407A;
+            border-radius: 5px;
+            margin-top: 6px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            height: 35px;
+            width: 150px;
+            font-size: 1em;
+
+        }
+
+        #loginbutton {
+            background-color: #71D0FF;
+            border-color: #71D0FF;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            height: 35px;
+            width: 150px;
+            font-size: 1em;
+        }
+
+        .buttons {
+            float: right;
+            width: 158px;
+        }
+
+        .menubuttons {
+            display: inline;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+            height: 100%;
+            margin-left: 10px;
+            color: #F03830;
+            text-decoration: none;
+
+        }
+
+        #menu ul {
+            float: right;
+            margin-right: 15px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #F03830;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 16px;
+            padding-bottom: 22px;
+        }
+
+        li a.active {
+            background-color: #F76B1C;
+            color: #074888;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #71D0FF;
+            color: #074888;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #topbox, #textbox, #menu {
+            min-width: 900px;
+        }
+
+        /* media queryes */
+        @media (max-width: 500px) {
+            #topbox img {
+                width: 50px;
+            }
+
+            #topbox {
+                font-size: 11px;
+            }
+
+            #topbox button {
+                width: 90px;
+            }
+
+            #topbox .buttons {
+                width: 94px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #topbox, #textbox, #menu {
+                width: 98%;
+                min-width: 300px;
+            }
+
+            #menu li {
+                margin-left: 0px;
+            }
+
+            #menu {
+                height: auto;
+            }
+
+            #menu ul {
+                float: left;
+                width: 100%;
+                margin: 0px;
+                padding: 15px;
+
+                box-sizing: border-box;
+            }
+
+            #menu ul li {
+                width: 100%;
+                height: auto;
+                display: block;
+
+            }
+
+            #menu ul li a {
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+                display: block;
+                padding: 5px 5px;
+                box-sizing: border-box;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body style="background-color:#FFF8E4" data-spy="scroll" data-target=".menubuttons li" class="fof">
+
+<div id="topbox">
+    <img src="logo.png" id="logo"/>
+    <div id="textlogo">General and Adolescent <br> Paediatric Research <br> Collaborative <br> UK and Ireland</div>
+    <span class="buttons">
+            <button type="button" id="signupbutton"><span style="color:#FFFB00"><b>Join GAPR-UKI</b></span></button>
+            <button type="button" id="loginbutton"><span style="color:#074888"><b>Log in</b></span></button>
+      </span>
+</div>
+
+<div class="clear"></div>
+
+<!--  -->
+<div id="menu">
+    <img src="logomenu.png" id="logomenu"/>
+
+    <ul>
+        <li class="menubuttons"><a class="active">About Us</a></li>
+        <li class="menubuttons"><a href="#resources">Resources</a></li>
+        <li class="menubuttons"><a href="#healtheconomics">Health economics</a></li>
+        <li class="menubuttons"><a href="#studies">Studies</a></li>
+        <li class="menubuttons"><a href="#publications">Publications</a></li>
+        <li class="menubuttons"><a href="#members">Members</a></li>
+        <li class="menubuttons"><a href="#links">Links</a></li>
+    </ul>
+
+    <div class="clear"></div>
+
+</div>
+
+<div id="textbox">
+    <p id="text">
+        Welcome to the website for the General and Adolescent Paediatric Research Collaborative - UK and
+        Ireland (GAPR-UKI).
+        This new network is called the General and Adolescent Paediatric Research Collaborative- UK and Ireland and is
+        known by the acronym GAPR-UKI.
+        In developed countries a lot of secondary care of children and young people is in ‘general and adolescent’
+        paediatric units. In fact in the UK there is an estimate that 80% of all paediatrics is general. 
+        It is perhaps an irony that a lot of the care conducted in these busy units is not based on first class
+        evidence. Some simple examples include the use of paracetamol for fever, the management of chronic fatigue
+        syndrome, the treatment of and investigation of sepsis in babies, the management of asthma, the treatment of
+        chronic constipation and the treatment and investigation of urninary tract infections. A lot of attention in
+        research is given to less common medical problems in children and young people is driven by the interests and
+        indeed biases of those with tertiary interests (i.e. the other 20% of activity).
+        We therefore have agreed to establish GAPR-UKI , and commence a series of mixed method research approaches to
+        help the evidence base for care of children and young people. We hope to collaborate in time with similar
+        organisations in other countries where possible. We also intend to collaborate where appropriate with other
+        established research networks both in the UK (e.g. PICANET - www.picanet.org.uk and PERUKI - www.peruki.org).
+
+        Yours sincerely,
+        Professor Alastair G Sutcliffe and Dr Colin Powell co-chairmen of GAPR-UKI
+    </p>
+    <img src="FullSizeRender.jpg" id="teampic"/>
+    <br><br>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
